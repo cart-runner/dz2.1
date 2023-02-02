@@ -4,7 +4,7 @@ int number = Convert.ToInt32(Console.ReadLine());
 int Digit(int arg1)
 {
     int result = 0;
-    if (number >= 100)
+    if ( number >= 100)
     {
         while (number > 1000)
         {
@@ -13,9 +13,16 @@ int Digit(int arg1)
         result = number % 10;
     }
     return result;
-
-    
 }    
  
 int num = Digit(number);
-Console.WriteLine(num);
+if ( number < 99)
+{
+    Console.WriteLine("третьей цифры нет");
+}
+if ( number > 100) 
+{
+   Console.WriteLine(num); 
+}
+
+
